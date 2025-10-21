@@ -1,6 +1,12 @@
+import Navbar from "./Navbar.tsx";
+import Main from "./Main.tsx";
+
 const DrawsPage = () => {
     return (
-        <div>DrawsPage</div>
+        <div className="drawspage-body">    
+            <Navbar />
+            <Main />
+        </div>
     )
 }
 
