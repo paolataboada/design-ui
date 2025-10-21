@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes } from 'react-router-dom'
-import DrawsPage from './modules/marketplace/pages/MarketplacePage'
-import MarketplacePage from './modules/draws/pages/DrawsPage'
+import DrawsPage from './modules/draws/pages/DrawsPage'
+import MarketplacePage from './modules/marketplace/pages/MarketplacePage'
 
 function App() {
   return (
