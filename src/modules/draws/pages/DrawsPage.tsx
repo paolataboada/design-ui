@@ -1,5 +1,5 @@
-import Navbar from "./Navbar.tsx";
-import Main from "./Main.tsx";
+import Navbar from "./components/Navbar.tsx";
+import Main from "./components/Main.tsx";
 
 const DrawsPage = () => {
     return (

@@ -12,8 +12,6 @@ const Main = () => {
             </header>
             <div className="content">
                 <DrawTicket />
-                <DrawTicket />
-                <DrawTicket />
             </div>
         </>
     )
