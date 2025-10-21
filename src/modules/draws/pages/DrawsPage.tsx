@@ -1,7 +1,7 @@
-const MarketplacePage = () => {
+const DrawsPage = () => {
     return (
-        <div>MarketplacePage</div>
+        <div>DrawsPage</div>
     )
 }
 
-export default MarketplacePage
+export default DrawsPage
