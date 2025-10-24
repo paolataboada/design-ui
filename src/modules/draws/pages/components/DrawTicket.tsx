@@ -37,7 +37,7 @@ const TicketItem = ({
 
   return (
     <div className="flex flex-col md:flex-row items-start gap-8 w-full max-w-4xl">
-      <img src={ticketSrc} alt={ticketAlt} className="w-55" />
+      <img src={ticketSrc} alt={ticketAlt} className="w-358px, h-182px" />
 
       {/* Contenido */}
       <div className="flex flex-col items-center md:items-start">

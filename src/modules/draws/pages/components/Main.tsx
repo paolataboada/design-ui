@@ -1,20 +1,24 @@
-import DrawTicket from "./DrawTicket.tsx";
+import DrawTicket from "./DrawTicket";
+import Sidebar from "./Sidebar";
 
 const Main = () => {
     return (
-        <>
-            <header className="draw-header">
-                <div className="money">
-                    <div className="money-img"></div>
-                    <p>6000</p>
+        <div className="flex flex-1">
+            <Sidebar />
+            <main className="flex-1 p-6 bg-[#01060D]">
+                <div className="max-w-6xl mx-auto">
+                    
+                    {/* Header del contenido  
+                    <div className="mb-8">
+                        
+                    </div> */}
+                    <DrawTicket />
+                    
                 </div>
-                <h2 className="draw-title">Draw</h2>
-            </header>
-            <div className="content">
-                <DrawTicket />
-            </div>
-        </>
-    )
+            </main>
+            
+        </div>
+    );
 }
 
-export default Main
+export default Main;
