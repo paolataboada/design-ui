@@ -1,3 +1,7 @@
+import { useState } from 'react';
+import { createPortal } from 'react-dom';
+import InformationModal from './InformationModal';
+
 // Interface para las props
 interface TicketItemProps {
   ticketSrc: string;
@@ -29,6 +33,8 @@ const TicketItem = ({
   ];
   const labels = ["DAYS", "HOURS", "MINS", "SECS"];
 
+  const [toggleModal, setToggleModal] = useState(false);
+
   return (
     <div className="flex flex-col md:flex-row items-start gap-8 w-full max-w-4xl">
       <img src={ticketSrc} alt={ticketAlt} className="w-55" />
@@ -46,9 +52,13 @@ const TicketItem = ({
           ))}
         </div>
 
-        <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-1 rounded-sm w-40 transition-colors">
+        <button className="mt-6 bg-blue-600 hover:bg-blue-700 text-white px-8 py-1 rounded-sm w-40 transition-colors" onClick={() => setToggleModal(true)}>
           Information
         </button>
+        {toggleModal && createPortal(
+          <InformationModal onClose={() => setToggleModal(false)} />,
+          document.body
+        )}
       </div>
     </div>
   );
